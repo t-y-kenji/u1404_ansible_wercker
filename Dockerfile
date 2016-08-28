@@ -1,9 +1,10 @@
 FROM ubuntu:14.04
-RUN apt-get update && apt-get -y install python-pip
-          python2.7-dev
-          libssl-dev
-          libffi-dev
-          libpython2.7-dev
+RUN apt-get update && apt-get -y install  \
+          python-pip  \
+          python2.7-dev  \
+          libssl-dev  \
+          libffi-dev  \
+          libpython2.7-dev  \
           libyaml-dev
 
 RUN pip install --upgrade setuptools
